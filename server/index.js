@@ -3,6 +3,7 @@ const cors = require('cors');
 
 const app = express();
 
+app.use(cors.json());
 app.use(express.json());
 
 app.get('/api/users', (req,res) => {
